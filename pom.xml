@@ -10,10 +10,6 @@
     <version>1.0-SNAPSHOT</version>
 
 
-    <properties>
-        <hibernate-version>5.2.10.Final</hibernate-version>
-    </properties>
-
 
     <build>
         <plugins>
@@ -34,7 +30,7 @@
             <dependency>
                 <groupId>org.springframework.data</groupId>
                 <artifactId>spring-data-releasetrain</artifactId>
-                <version>Ingalls-SR6</version>
+                <version>Hopper-SR11</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -55,12 +51,7 @@
 
     <dependencies>
 
-        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>${hibernate-version}</version>
-        </dependency>
+
 
         <dependency>
             <groupId>mysql</groupId>

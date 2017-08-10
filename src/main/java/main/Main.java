@@ -1,3 +1,5 @@
+package main;
+
 import mapping.ClientsEntity;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -41,7 +43,7 @@ public class Main {
 
             Transaction tx = session.beginTransaction();
             ClientsEntity client = new ClientsEntity();
-            String clientPass = "qwerty";
+        String clientPass = "qwerty";
             client.setLogin("borushka");
             client.setHash(Integer.toBinaryString(clientPass.hashCode()));
             session.save(client);
