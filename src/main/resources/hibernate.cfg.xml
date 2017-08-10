@@ -11,10 +11,10 @@
         <property name="connection.url">jdbc:mysql://localhost:3306/test</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
 
-        <mapping class="mappings.ClientsEntity"/>
-        <mapping class="mappings.ClientsRequestsEntity"/>
-        <mapping class="mappings.MasterResponsesEntity"/>
-        <mapping class="mappings.MastersEntity"/>
+        <mapping class="mapping.ClientsEntity"/>
+        <mapping class="mapping.ClientsRequestsEntity"/>
+        <mapping class="mapping.MasterResponsesEntity"/>
+        <mapping class="mapping.MastersEntity"/>
 
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hbm2ddl.auto">update</property> -->

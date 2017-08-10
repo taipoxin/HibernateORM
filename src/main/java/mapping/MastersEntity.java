@@ -1,12 +1,9 @@
-package mappings;
+package mapping;
 
 import config.ConfigParams;
 
 import javax.persistence.*;
 
-/**
- * Created by tiranid on 08.08.2017.
- */
 @Entity
 @Table(name = "masters", schema = ConfigParams.schema)
 public class MastersEntity {

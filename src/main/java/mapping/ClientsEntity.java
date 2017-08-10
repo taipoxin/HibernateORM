@@ -1,12 +1,9 @@
-package mappings;
+package mapping;
 
 import config.ConfigParams;
 
 import javax.persistence.*;
 
-/**
- * Created by tiranid on 08.08.2017.
- */
 @Entity
 @Table(name = "clients", schema = ConfigParams.schema)
 public class ClientsEntity {
@@ -15,6 +12,8 @@ public class ClientsEntity {
     private String hash;
 
     @Id
+    //
+    @GeneratedValue(strategy=GenerationType.AUTO)
     @Column(name = "id")
     public int getId() {
         return id;

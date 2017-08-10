@@ -1,16 +1,13 @@
-package mappings;
+package mapping;
 
 import config.ConfigParams;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
 
-/**
- * Created by tiranid on 08.08.2017.
- */
 @Entity
-@Table(name = "master_responses", schema = ConfigParams.schema)
-public class MasterResponsesEntity {
+@Table(name = "clients_requests", schema = ConfigParams.schema)
+public class ClientsRequestsEntity {
     private int id;
     private String login;
     private int reqNumber;
@@ -72,7 +69,7 @@ public class MasterResponsesEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        MasterResponsesEntity that = (MasterResponsesEntity) o;
+        ClientsRequestsEntity that = (ClientsRequestsEntity) o;
 
         if (id != that.id) return false;
         if (reqNumber != that.reqNumber) return false;

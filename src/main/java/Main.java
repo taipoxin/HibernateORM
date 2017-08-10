@@ -1,10 +1,10 @@
-import mappings.ClientsEntity;
-import org.hibernate.*;
+import mapping.ClientsEntity;
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-/**
- * Created by tiranid on 08.08.2017.
- */
 public class Main {
     private static final SessionFactory ourSessionFactory;
 
